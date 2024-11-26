@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formula Sheet+</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Sofadi+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <div id="header">
+      <h1>Formula Sheet+</h1>
+      <p>
+        Welcome to <span class="formula-sheet">Formula Sheet+!</span> Here you
+        will find the formulas for the surface area and volume of the following
+        3D shapes:
+      </p>
+      <ul>
+        <li>Cube</li>
+        <li>Rectangular Cuboid</li>
+        <li>Rectangular Pyramid</li>
+        <li>Square Pyramid</li>
+        <li>Cylinder</li>
+        <li>Cone</li>
+        <li>Sphere and Hemisphere</li>
+      </ul>
+      <hr />
+    </div>
+
+    <!-- Surface Area Section -->
+    <table>
+      <!-- Row 1 -->
+      <tr>
+        <th>Shape</th>
+        <th>Surface Area</th>
+        <th>Volume</th>
+      </tr>
+
+      <!-- Row 1 Cube -->
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Cube" target="_blank"
+            ><img src="img/squares.jpg"
+          /></a>
+          <p>Cube</p>
+        </td>
+
+        <td>
+          SA = 6 <input id="cube-sa-in" type="number" placeholder="s" /><sup
+            >2</sup
+          >
+          <br />
+          <br />
+          <button id="cube-sa-btn">Answer</button>=
+          <span id="cube-sa-out">----</span>
+        </td>
+
+        <!-- <sup> tag is used to display text as subscript, which can be used for exponents. -->
+        <!-- <sub> can be used for subtext (bottom). -->
+
+        <td>
+          V = <input id="cube-v-in" type="number" placeholder="s" />
+          <sup>3</sup> <br />
+          <br />
+          <button id="cube-v-btn">Answer</button>=
+          <span id="cube-v-out">----</span>
+        </td>
+      </tr>
+
+      <!-- Row 2 Rectangle -->
+      <tr>
+        <td>
+          <a
+            href="https://en.wikipedia.org/wiki/Rectangular_cuboid"
+            target="_blank"
+          >
+            <img src="img/rectangles.jpg"
+          /></a>
+          <p>Rectangular Cuboid</p>
+        </td>
+
+        <td>
+          SA = 2 <input id="rec-sa-In1" type="number" placeholder="l" />
+          <input id="rec-sa-In2" type="number" placeholder="w" /> + 2
+          <input id="rec-sa-In3" type="number" placeholder="w" />
+          <input id="rec-sa-In4" type="number" placeholder="h" /> <br />+ 2
+          <input id="rec-sa-In5" type="number" placeholder="l" />
+          <input id="rec-sa-In6" type="number" placeholder="h" />
+          <br />
+          <br />
+          <button id="rec-sa-btn">Answer</button>=
+          <span id="rec-sa-out">----</span>
+        </td>
+
+        <!-- <sup> tag is used to display text as subscript, which can also be used for exponents. -->
+
+        <td>
+          V = <input id="rec-v-in1" type="number" placeholder="l" />
+          <input id="rec-v-in2" type="number" placeholder="w" />
+          <input id="rec-v-in3" type="number" placeholder="h" />
+          <br />
+          <br />
+          <button id="rec-v-btn">Answer</button>=
+          <span id="rec-v-out">----</span>
+        </td>
+      </tr>
+
+      <!-- Row 3 Rectanglular Pyramid -->
+      <tr>
+        <td>
+          <a
+            href="https://en.wikipedia.org/wiki/Pyramid_(geometry)"
+            target="_blank"
+            ><img src="img/rectangularpyramid.jpg"
+          /></a>
+
+          <p>Rectamgular Pyramid</p>
+        </td>
+        <td>
+          SA = <input id="recp-sa-in1" type="number" placeholder="l" />
+          <input id="recp-sa-in2" type="number" placeholder="w" /> +
+          <input id="recp-sa-in3" type="number" placeholder="l" />
+          <input id="recp-sa-in4" type="number" placeholder="s" />
+          <sub>1</sub> +
+          <input id="recp-sa-in5" type="number" placeholder="w" />
+          <input id="recp-sa-in6" type="number" placeholder="s" /> <sub>2</sub>
+          <br />
+          <br />
+          <button id="recp-sa-btn">Answer</button>=
+          <span id="recp-sa-out">----</span>
+        </td>
+
+        <td>
+          V = <sup>1</sup>&frasl;<sub>3</sub>
+          <input id="recp-v-in1" type="number" placeholder="l" />
+          <input id="recp-v-in2" type="number" placeholder="w" />
+          <input id="recp-v-in3" type="number" placeholder="h" />
+          <br />
+          <br />
+          <button id="recp-v-btn">Answer</button>=
+          <span id="recp-v-out">----</span>
+        </td>
+      </tr>
+
+      <!-- <sup>1</sup>&frasl;<sub>3</sub> is used to make fractions using sub and super scripts and adding slash in between. -->
+      <!-- &#960; is the entity for pi symbol -->
+
+      <!-- Row 4 Square Pyramid -->
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Square_pyramid" target="_blank"
+            ><img src="img/rectangularpyramid.jpg"
+          /></a>
+          <p>Square Pyramid</p>
+        </td>
+
+        <td>
+          SA = <input id="spy-sa-in1" type="number" placeholder="l" />
+          <sup>2</sup> + 2
+          <input id="spy-sa-in2" type="number" placeholder="l" />
+          <input id="spy-sa-in3" type="number" placeholder="s" />
+          <br />
+          <br />
+          <button id="spy-sa-btn">Answer</button>=
+          <span id="spy-sa-out">----</span>
+        </td>
+
+        <td>
+          Volume = <sup>1</sup>&frasl;<sub>3</sub>
+          <input id="spy-v-in1" type="number" placeholder="l" /> <sup>2</sup>
+          <input id="spy-v-in2" type="number" placeholder="h" />
+          <br />
+          <br />
+          <button id="spy-v-btn">Answer</button>=
+          <span id="spy-v-out">----</span>
+        </td>
+      </tr>
+
+      <!-- Row 5 Cylinder -->
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Cylinder" target="_blank">
+            <img src="img/cylinder.jpg"
+          /></a>
+          <p>Cylinder</p>
+        </td>
+
+        <td>
+          SA = 2&#960; <input id="cyn-sa-in1" type="number" placeholder="r" />
+          <sup>2</sup> + 2&#960;
+          <input id="cyn-sa-in2" type="number" placeholder="r" />
+          <input id="cyn-sa-in3" type="number" placeholder="h" />
+          <br />
+          <br />
+          <button id="cyn-sa-btn">Answer</button>=
+          <span id="cyn-sa-out">----</span>
+        </td>
+
+        <td>
+          V = &#960; <input id="cyn-v-in1" type="number" placeholder="r" />
+          <sup>2</sup>
+          <input id="cyn-v-in2" type="number" placeholder="h" />
+          <br />
+          <br />
+          <button id="cyn-v-btn">Answer</button>=
+          <span id="cyn-v-out">----</span>
+        </td>
+      </tr>
+
+      <!-- Row 6 Cone -->
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Cone" target="_blank">
+            <img src="img/cone.jpg"
+          /></a>
+
+          <p>Cone</p>
+        </td>
+        <td>
+          SA = &#960; <input id="cone-sa-in1" type="number" placeholder="r" />
+          <sup>2</sup> + &#960;
+          <input id="cone-sa-in2" type="number" placeholder="r" />
+          <input id="cone-sa-in3" type="number" placeholder="s" />
+          <br />
+          <br />
+          <button id="cone-sa-btn">Answer</button>=
+          <span id="cone-sa-out">----</span>
+        </td>
+
+        <td>
+          V = <sup>1</sup>&frasl;<sub>3</sub> &#960;
+          <input type="number" placeholder="r" />
+          <sup>2</sup>
+          <input type="number" placeholder="h" />
+          <br />
+          <br />
+          <button>Answer</button>= <span>----</span>
+        </td>
+      </tr>
+
+      <!-- Row 7 Sphere -->
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Sphere" target="_blank">
+            <img src="img/sphere.jpg"
+          /></a>
+
+          <p>Sphere</p>
+        </td>
+        <td>
+          SA = 4&#960; <input type="number" placeholder="r" /> <sup>2</sup>
+          <br />
+          <br />
+          <button>Answer</button>= <span>----</span>
+        </td>
+
+        <td>
+          V = <sup>4</sup>&frasl;<sub>3</sub> &#960;
+          <input type="number" placeholder="r" />
+          <sup>3</sup>
+          <br />
+          <br />
+          <button>Answer</button>= <span>----</span>
+        </td>
+      </tr>
+
+      <!-- Row 8 Hemisphere -->
+      <tr>
+        <td>
+          <a href="https://en.wikipedia.org/wiki/Hemisphere" target="_blank">
+            <img src="img/hemispshere.jpg"
+          /></a>
+
+          <p>Hemisphere</p>
+        </td>
+        <td>
+          SA = 3&#960; <input type="number" placeholder="r" /> <sup>2</sup>
+          <br />
+          <br />
+          <button>Answer</button>= <span>----</span>
+        </td>
+
+        <td>
+          V = <sup>2</sup>&frasl;<sub>3</sub> &#960;
+          <input type="number" placeholder="r" />
+          <sup>3</sup>
+          <br />
+          <br />
+          <button>Answer</button>= <span>----</span>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
